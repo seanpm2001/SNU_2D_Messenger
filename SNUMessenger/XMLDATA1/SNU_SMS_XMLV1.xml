@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!-- Start of XML markup (note: do not put before the XML declaration) !-->
+<!-- The SNU Messager default XML system !-->
+<SNUMessenger>
+	<SNUMessages>
+		<SMS count="3"> <!-- Total message count and main body for entire messenger XNL !-->
+		<contactList>
+			<contact1>
+				<recent>
+					<sampleUNIX count="3"> <!-- UNIX section is a test section for displaying text and UNIX time with real time !-->
+						<message1> <!-- Messages are in separate containers, there are 3 messages in this sample !-->
+							<messager1name>Dennis Ritchie</messager1name> <!-- Dennis Ritchie and Ken Thompson are in this message, as they REALLY do not get enough credit for their work outside of the tech savvy UNIX community !-->
+							<message1date>January 1st 1970</message1date> <!-- Time starts on January 1st 1970 at 12:00 am (the start of the UNIX Epoch) or the start of UNIX time !-->
+							<message1time>00:00:02 UNIX:2</message1time> <!-- The first part is real time in hours, minutes, and seconds, the next part is UNIX time !-->
+								<body> <!-- Inside the body contains the message !-->
+								Hello friend. What do you want to do today? It is the beginning of the UNIX Epoch
+								</body>
+						</message1>
+						<message2>
+							<messager2name>Ken Thompson</messager2name> <!-- This is the second recipient of the message !-->
+							<message2date>January 1st 1970</message2date>
+							<message2time>00:02:03 UNIX:123</message2time>
+								<body>
+								Maybe we can update UNIX and set new standards for C, maybe some revisions?
+								</body>
+						</message2>
+						<message3>
+							<messager3name>Dennis Ritchie</messager3name> <!-- This is the main recipient again !-->
+							<message3date>January 1st 1970</message3date>
+							<message3time>00:03:06 UNIX:186</message3time>
+								<body>
+								I was thinking we could do something different today. Maybe just take the day off.
+								</body>
+						</message3> <!-- This is the end of the third message, thus the end of the conversation !-->
+					</sampleUNIX> <!-- End of the UNIX sample section !-->
+					<messagestartsection> <!-- The message starter section !-->
+						<messageNew> <!-- The start of typing a new message !-->
+							<body> <!-- Inside the body contains the most recent typed message !-->
+							Type here...
+							</body>
+						</messageNew>
+					</messagestartsection>
+				</recent>
+			</contact1>
+		</contactList>
+		</SMS> <!-- This marks the end of the application !-->
+	</SNUMessages>
+</SNUMessenger>
+<!-- End of XML markup !-->
